@@ -1,7 +1,7 @@
 using UnityEngine;
 using Com.LuisPedroFonseca.ProCamera2D;
 
-namespace OutbackGames.IntegrationTools{
+namespace OutbackGames.IntegrationTools.ProCamera2D{
 	
 public class InitializeObjectAsProCam2DTarget : MonoBehaviour
 {

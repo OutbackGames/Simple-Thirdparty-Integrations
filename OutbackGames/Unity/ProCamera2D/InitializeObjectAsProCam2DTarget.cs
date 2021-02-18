@@ -3,23 +3,23 @@ using Com.LuisPedroFonseca.ProCamera2D;
 
 namespace OutbackGames.IntegrationTools{
 	
-	public class InitializeObjectAsProCam2DTarget : MonoBehaviour
+public class InitializeObjectAsProCam2DTarget : MonoBehaviour
+{
+	//Set The Attached Game Object To The Target For ProCamera2D.
+	void Start()
 	{
-    //Set The Attached Game Object To The Target For ProCamera2D.
-		void Start()
-		{
-			ProCamera2D.Instance?.AddCameraTarget(gameObject.transform);
-			ProCamera2D.Instance?.CenterOnTargets();
+		ProCamera2D.Instance?.AddCameraTarget(gameObject.transform);
+		ProCamera2D.Instance?.CenterOnTargets();
 
 //Section only for Editor use
 #if UNITY_EDITOR
-			if(ProCamera2D.Instance == null)
-			{
-				Debug.LogError("There Is No ProCamera2D Instance To Reference!");
-			}
+		if(ProCamera2D.Instance == null)
+		{
+			Debug.LogError("There Is No ProCamera2D Instance To Reference!");
+		}
 #endif
 
-		}
-
 	}
+
+}
 }

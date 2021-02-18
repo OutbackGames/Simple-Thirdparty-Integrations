@@ -1,6 +1,6 @@
 using UnityEngine;
 using DarkTonic.MasterAudio;
-namespace OutbackGames.IntegrationTools
+namespace OutbackGames.IntegrationTools.MasterAudio
 {
     public class AnimSoundTrigger : MonoBehaviour
     {
